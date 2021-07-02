@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -6,12 +8,13 @@
 </head>
 <body>
 <?php
+	print("確認");
 	foreach (getallheaders() as $name => $value) {
     	echo "$name: $value\n";
 	}
 ?>
   
-  <p>送信された値は<?php echo $_POST["caseId"] ?></p>
+  <p>送信された値は<?php echo $_POST["Id"] ?></p>
   
   //ここにテーブル要素でPOSTで取得した値を表示させる
   //POSTの値は<?php echo $_POST["caseId"] ?>の形式で取得
