@@ -20,14 +20,32 @@
 	echo '<br>';
 	print("メールアドレス：".$_GET["Noemail__c"]);
 ?>
-  //ここにformで送信する値を設定する。設定した内容は画面上で確認できるようテーブル要素で画面表示する
   <form action="https://contact-omni7--mocecreb.visual.force.com/apex/MemberInfotoCase" method="POST">
-    <input type="text" name="caseId" value="<?php echo htmlspecialchars($caseId, ENT_QUOTES, 'UTF-8'); ?>">
-    <input type="text" name="commonMemberId" value="<?php echo htmlspecialchars($commonMemberId, ENT_QUOTES, 'UTF-8'); ?>">
-    <input type="text" name="commonMemberIdHash" value="<?php echo htmlspecialchars($commonMemberIdHash, ENT_QUOTES, 'UTF-8'); ?>">
-    <input type="text" name="mailAddress" value="<?php echo htmlspecialchars($mailAddress, ENT_QUOTES, 'UTF-8'); ?>">
-    <input type="text" name="subMailAddress" value="<?php echo htmlspecialchars($subMailAddress, ENT_QUOTES, 'UTF-8'); ?>">
-    
+  	
+  	<table>
+	    <tbody>
+	        <tr>
+	            <td>ケースID</td>
+	            <td><input type="text" name="caseId" value="<?php echo htmlspecialchars($caseId, ENT_QUOTES, 'UTF-8'); ?>"></td>
+	        </tr>
+	        <tr>
+	            <td>会員ID</td>
+	            <td><input type="text" name="commonMemberId" value="<?php echo htmlspecialchars($commonMemberId, ENT_QUOTES, 'UTF-8'); ?>"></td>
+	        </tr>
+	        <tr>
+	            <td>会員IDハッシュ</td>
+	            <td><input type="text" name="commonMemberIdHash" value="<?php echo htmlspecialchars($commonMemberIdHash, ENT_QUOTES, 'UTF-8'); ?>"></td>
+	        </tr>
+	        <tr>
+	            <td>メールアドレス</td>
+	            <td><input type="text" name="mailAddress" value="<?php echo htmlspecialchars($mailAddress, ENT_QUOTES, 'UTF-8'); ?>"></td>
+	        </tr>
+	        <tr>
+	            <td>サブメールアドレス</td>
+	            <td><input type="text" name="subMailAddress" value="<?php echo htmlspecialchars($subMailAddress, ENT_QUOTES, 'UTF-8'); ?>"></td>
+	        </tr>
+	    </tbody>
+	</table>
     <input type="submit" value="submit">
   </form>
 </body>
