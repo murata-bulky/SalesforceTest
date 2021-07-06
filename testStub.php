@@ -20,7 +20,7 @@
 	echo '<br>';
 	print("メールアドレス：".$_GET["Noemail__c"]);
 ?>
-  <form action="https://contact-omni7--mocecreb.visual.force.com/apex/MemberInfotoCaseController" method="POST">
+  <form action="https://contact-omni7--mocecreb--c.visualforce.com/apex/MemberInfotoCase" method="POST">
   	
   	<table>
 	    <tbody>
