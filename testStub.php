@@ -12,13 +12,11 @@
 	$mailAddress = "";
 	$subMailAddress = "";
 	
-	print("ケースID：".$_GET["Id"]);
+	print("ケースID：".$_GET["caseId"]);
 	echo '<br>';
-	print("共通会員ID：".$_GET["InquiryCmnMmbrId__c"]);
+	print("共通会員ID：".$_GET["commonMemberId"]);
 	echo '<br>';
-	print("共通会員IDハッシュ：".$_GET["InquiryCmnMmbrIdHash_7pay__c"]);
-	echo '<br>';
-	print("メールアドレス：".$_GET["Noemail__c"]);
+	print("共通会員IDハッシュ：".$_GET["commonMemberIdHash"]);
 ?>
   <form action="https://contact-omni7--mocecreb--c.visualforce.com/apex/MemberInfotoCase" method="POST">
   	
