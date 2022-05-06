@@ -18,7 +18,7 @@
 	echo '<br>';
 	print("共通会員IDハッシュ：".$_POST["commonMemberIdHash"]);
 ?>
-  <form action="https://contact-omni7--textecreb--c.sandbox.vf.force.com/apex/MemberInfotoCase" method="POST">
+  <form action="https://contact-omni7--textecreb--c.visualforce.com/apex/MemberInfotoCase" method="POST">
   	
   	<table>
 	    <tbody>
