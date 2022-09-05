@@ -12,7 +12,7 @@
 	$mailAddress = "";
 	$subMailAddress = "";
 	
-	print("ケースID：".$_POST["caseId"]);
+	print("ケースID：".$_GET["caseId"]);
 	echo '<br>';
 	print("共通会員ID：".$_POST["commonMemberId"]);
 	echo '<br>';
