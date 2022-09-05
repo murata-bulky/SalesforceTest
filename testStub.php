@@ -18,7 +18,7 @@
 	echo '<br>';
 	print("共通会員IDハッシュ：".$_POST["commonMemberIdHash"]);
 	echo '<br>';
-	print("ヘッダー：".$_SERVER);
+	var_dump($_SERVER);
 ?>
   <form action="https://contact-omni7--textecreb--c.sandbox.vf.force.com/apex/MemberInfotoCase" method="POST">
   <!-- <form action="https://contact-omni7--rehecreb--c.sandbox.vf.force.com/apex/MemberInfotoCase" method="POST"> -->
